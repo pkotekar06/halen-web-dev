@@ -1,0 +1,387 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #black;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  *{
+    box-sizing: border-box;
+    transition: all 0.4s;
+  }
+  body{
+    font-family: sans-serif;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  /**-------RIDESHARE STYLING START----------+**/
+   navbar styling
+  .navbar{
+    background: #12263AF2;
+  } 
+  
+  /* logo style  */
+  
+  .logo {
+    width: 175px;
+    height: 78.5px;
+    gap: 10px;
+    display: flex;
+    padding-top: 20px;
+  
+  }
+  .logo img{
+    width: 175.25px;
+    height: 58.53px;
+    top: 20px;
+    color: #06BCC1;
+  }
+  .nav-menu{
+    gap: 24px;
+  }
+  .nav-menu a{
+    /* display: block; */
+    /* text-align: cente  r; */
+    height: 17;
+    gap: 24px;
+      padding: 5px 0;
+      font-family: Lato;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0%;
+  
+  }
+  
+  .hide{
+    display: none;
+  }
+  
+  /* for Desktop view  */
+  @media screen and (min-width:600px){
+    .navbar{
+        color: #FFFFFF99;
+        background: #12263AF2;
+    }
+    .nav-menu{
+        display: block;
+        /* position: static; */
+        width: auto;
+        /* margin-right:20px; */
+        /* background: none; */
+    }
+    .nav-menu a{
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+  }
+  
+  /*   GIRL IMAGE STYLING  */
+  .rideshare-and-delivery-container {
+    /* width: 1262px;
+  height: 723px; */
+  display: flex;
+  position: relative;
+  }
+
+  
+  .rideshare-and-delivery {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    /* width: 539px;
+    height: 306px; */
+  }
+  .navbar-container {
+    width: 100%;
+    position: absolute;
+    padding-left: 45px;
+    padding-top: 10px;
+  }
+  .girl-image-container {
+    display: inline-flex;
+    padding-left: 142px;
+  }
+  .rideshare-and-delivery-container {
+    display: block;
+    width: max-content;
+  }
+  
+  .container {
+    width: 1440px;
+    height: 723px;
+  }
+  .title {
+      width: 80%;
+      height: 90px;
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      width: 13em;
+    }
+    .content-text {
+      width: 539px;
+      height: 125px;
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #000000;
+      text-align: justify;
+      line-height: 1.18;
+    }
+  
+    .halen-btn {
+      gap: 10px;
+      padding: 10px;
+      background: rgba(6, 188, 193, 1);
+      border: none;
+      .btn-label {
+        font-family: Lato;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: capitalize;
+        color: rgba(255, 255, 255, 1);
+        width: 89px;
+        height: 17px;
+  
+  
+      }
+    }
+  /**-------RIDESHARE STYLING END----------+**/
+  
+  /**-------ABOUT HALEN STYLING START----------+**/
+
+    .cls-about-halen-text {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cls-about-halen-apps {
+      width: 85%;
+      height: 70%;
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto 
+    }
+  .service-box img {
+    width: 90px;
+    height: auto;
+    margin: 8%;
+  }
+  .cls-service-box {
+    width: auto;
+    height: auto;
+  }
+  .cls-service-name {
+    font-family: Lato;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+    border: none !important;
+      float: left;
+      display: inline-table !important;
+      width: -webkit-fill-available;
+  }
+  .about-title {
+    text-align: center;
+    height: auto;
+    padding: 0 20px 20px;
+  }
+  .about-context-text {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    height: auto;
+    width: auto;
+  }
+  .cls-about-text {
+    text-align: center;
+    font-family: Lato;
+    font-weight: 550;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 0 14%;
+  }
+
+  .cls-sub-heading {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;    
+  }
+ .cls-heading {
+    font-family: Lato;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+  }
+  .cls-span {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    
+  }
+  .cls-topic-title {
+    font-family: Lato;
+font-weight: 600;
+font-size: 40px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+  }
+  .cls-topic-title-left {
+    font-family: Lato;
+font-weight: 600;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: left;
+  }
+  .cls-topic-text {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;    
+
+  }
+  .cls-topic-text-span {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;  
+
+  }
+  
+  
+  .cls-list-items {
+    font-family: Lato;
+  font-weight: 400;
+  font-size: larger;
+  line-height: normal;
+  letter-spacing: 0%;
+  font-weight: bold;
+    
+
+  }
+  .cls-halen-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+
+  
+  /**-------ABOUT HALEN STYLING END----------+**/
+
+
+  .cls-halen-input {
+    border: solid 2px #06bcc1;
+    legend {
+      color: #06bcc1;
+      padding: 7px;
+      height: fit-content;
+    }
+  }
+
+  .cls-footer {
+    background-color: #12263A;
+    div {
+      color: white;
+    }
+  }
+  .cls-footer-menu {
+    background-color: #052e58cc;
+    div {
+      color: white;
+    }
+    ;
+  }
